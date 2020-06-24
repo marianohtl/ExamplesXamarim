@@ -5,7 +5,13 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 
 namespace WS_Tower.Controllers
-{
+{  
+
+    [Produces("application/json")]
+
+    [Route("api/[controller]")]
+
+    [ApiController]
     public class JogadorController : Controller
     {
         public IActionResult Index()
