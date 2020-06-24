@@ -14,7 +14,7 @@ namespace WS_Tower.Controllers
     [Route("api/[controller]")]
 
     [ApiController]
-    public class UsuarioController : Controller
+    public class UsuarioController : ControllerBase
     {
         /// </summary>
         private IUsuario _usuario;

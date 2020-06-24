@@ -11,11 +11,8 @@ namespace WS_Tower.Controllers
     [Route("api/[controller]")]
 
     [ApiController]
-    public class SelecaoController : Controller
+    public class SelecaoController : ControllerBase
     {
-        public IActionResult Index()
-        {
-            return View();
-        }
+    
     }
 }

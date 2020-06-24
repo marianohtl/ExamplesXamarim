@@ -11,13 +11,8 @@ namespace WS_Tower.Controllers
     [Route("api/[controller]")]
 
     [ApiController]
-    public class JogoController : Controller
+    public class JogoController : ControllerBase
     {
-        [HttpPost]
-        public IActionResult Index()
-        {
 
-            return View();
-        }
     }
 }
