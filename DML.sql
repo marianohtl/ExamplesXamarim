@@ -764,6 +764,45 @@ INSERT [Dbo].[Jogador] ([Nome], [Nascimento], [Posicao], [QTDEFaltas], [QTDECart
 VALUES ('Helder Postiga', CAST('1980-06-08T00:00:00.000' AS DATETIME), 'Atacante', 3, 1, 2, 'Nenhuma', 23, 8, 3)
 GO
 
+insert into Usuario (Nome, Email, Apelido, Senha)
+values
+(
+	'Gabriel', 'gabriel@email.com', 'Biel', '12345'
+),
+(
+	'Thalita', 'thalita@email.com', 'Talia', '54321'
+),
+(
+	'Jin Woo', 'jin@email.com', 'Seong', '67890'
+),
+(
+	'Levi', 'levi@email.com', 'Lev', '09876'
+),
+(
+	'Bvoy', 'bvoy@email.com', 'By', '56748'
+);
+
+update Selecao set Nome = 'França' where Nome = 'Franþa';
+update Selecao set Nome = 'Itália' where Nome = 'Itßlia';
+
+insert into Jogo (SelecaoCasa, SelecaoVisitante, PlacarCasa, PlacarVisitante, PenaltisCasa, PenaltisVisitante, Data, Estadio)
+values
+(
+	1, 2, 2, 0, 0, 0, '05-01-2020', 'Signal Iduna Park'
+),
+(
+	3, 4, 0, 2, 0, 0, '04-02-2020', 'Camp Nou'
+),
+(
+	5, 6, 3, 3, 3, 5, '03-03-2020', 'Santiago Bernabéu'
+),
+(
+	7, 8, 2, 2, 4, 2, '02-04-2020', 'Azteca'
+),
+(
+	1, 3, 7, 1, 0, 0, '01-06-2020', 'Allianz Arena'
+);
+
 
 
 
