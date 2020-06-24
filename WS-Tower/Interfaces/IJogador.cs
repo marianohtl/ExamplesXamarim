@@ -8,7 +8,7 @@ namespace WS_Tower.Interfaces
 {
     interface IJogador
     {
- 
+        List<Jogador> GetAllPlayers();
 
     }
 }

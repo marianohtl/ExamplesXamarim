@@ -13,8 +13,9 @@ namespace WS_Tower.Repositories
 
         DataContext context = new DataContext();
 
-
-
-      
+        public List<Jogador> GetAllPlayers()
+        {
+            return context.Jogador.ToList();
+        }
     }
 }
