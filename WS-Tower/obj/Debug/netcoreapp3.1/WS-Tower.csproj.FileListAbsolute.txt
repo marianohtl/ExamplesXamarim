@@ -255,10 +255,13 @@ C:\Users\ThalitaMariano\Documents\Xamarim\WS-Tower\bin\Debug\netcoreapp3.1\runti
 C:\Users\ThalitaMariano\Documents\Xamarim\WS-Tower\obj\Debug\netcoreapp3.1\WS-Tower.csprojAssemblyReference.cache
 C:\Users\ThalitaMariano\Documents\Xamarim\WS-Tower\obj\Debug\netcoreapp3.1\staticwebassets\WS-Tower.StaticWebAssets.Manifest.cache
 C:\Users\ThalitaMariano\Documents\Xamarim\WS-Tower\obj\Debug\netcoreapp3.1\staticwebassets\WS-Tower.StaticWebAssets.xml
-C:\Users\ThalitaMariano\Documents\Xamarim\WS-Tower\obj\Debug\netcoreapp3.1\WS-Tower.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\ThalitaMariano\Documents\Xamarim\WS-Tower\obj\Debug\netcoreapp3.1\WS-Tower.AssemblyInfoInputs.cache
 C:\Users\ThalitaMariano\Documents\Xamarim\WS-Tower\obj\Debug\netcoreapp3.1\WS-Tower.AssemblyInfo.cs
 C:\Users\ThalitaMariano\Documents\Xamarim\WS-Tower\obj\Debug\netcoreapp3.1\WS-Tower.RazorTargetAssemblyInfo.cache
 C:\Users\ThalitaMariano\Documents\Xamarim\WS-Tower\obj\Debug\netcoreapp3.1\WS-Tower.csproj.CopyComplete
 C:\Users\ThalitaMariano\Documents\Xamarim\WS-Tower\obj\Debug\netcoreapp3.1\WS-Tower.dll
 C:\Users\ThalitaMariano\Documents\Xamarim\WS-Tower\obj\Debug\netcoreapp3.1\WS-Tower.pdb
+C:\Users\ThalitaMariano\Documents\Xamarim\WS-Tower\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\ThalitaMariano\Documents\Xamarim\WS-Tower\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Users\ThalitaMariano\Documents\Xamarim\WS-Tower\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
+C:\Users\ThalitaMariano\Documents\Xamarim\WS-Tower\obj\Debug\netcoreapp3.1\WS-Tower.MvcApplicationPartsAssemblyInfo.cache

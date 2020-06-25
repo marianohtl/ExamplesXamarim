@@ -10,5 +10,16 @@ namespace WS_Tower.Interfaces
     {
 
         List<Jogo> GetAllGames();
+
+        List<DateTime?> GetDatasGame();
+
+        List<string> GetStadium();
+
+        List<Jogo> GameByDate(DateTime date);
+
+        List<Jogo> GameByEstadium(string estadium);
+
+        List<Jogo> GameByTeams(string teams);
+
     }
 }

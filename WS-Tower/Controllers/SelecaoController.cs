@@ -31,5 +31,11 @@ namespace WS_Tower.Controllers
             return Ok(_selecao.GetAllTeams());
         }
 
+        [HttpGet("Teams")]
+        public IActionResult GetTeams()
+        {
+            return Ok(_selecao.GetTeams());
+        }
+
     }
 }

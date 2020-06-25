@@ -32,5 +32,7 @@ namespace WS_Tower.Controllers
             return Ok(_player.GetAllPlayers());
         }
 
+  
+
     }
 }

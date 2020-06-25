@@ -31,5 +31,40 @@ namespace WS_Tower.Controllers
         {
             return Ok(_game.GetAllGames());
         }
+
+
+        [HttpGet("Data")]
+        public IActionResult GetData()
+        {
+            return Ok(_game.GetDatasGame());
+
+        }
+
+        [HttpGet("Estadium")]
+        public IActionResult GetEstadium()
+        {
+            return Ok(_game.GetStadium());
+        }
+
+
+        [HttpGet("GameByDate/{date}")]
+        public IActionResult GetGameByData(DateTime date)
+        {
+            return Ok(_game.GameByDate(date));
+        }
+
+        [HttpGet("GameByEstadium/{estadium}")]
+        public IActionResult GetGameByEstadium(string estadium)
+        {
+            return Ok(_game.GameByEstadium(estadium));
+        }
+
+        [HttpGet("GameByTeams/{team}")]
+        public IActionResult GetGameByTeams(string team)
+        {
+            return Ok(_game.GameByTeams(team));
+        }
+
+
     }
 }

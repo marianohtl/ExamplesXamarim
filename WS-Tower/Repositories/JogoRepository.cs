@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -15,7 +16,32 @@ namespace WS_Tower.Repositories
 
         public List<Jogo> GetAllGames()
         {
-            return context.Jogo.ToList();
+            return context.Jogo.OrderByDescending(g => g.Data).ToList(); 
+        }
+        public List<DateTime?> GetDatasGame()
+        {
+            return context.Jogo.Select(d => d.Data).ToList();
+        }
+
+        public List<string> GetStadium()
+        {
+            return context.Jogo.Select(d => d.Estadio).ToList();
+        }
+        public List<Jogo> GameByDate(DateTime date)
+        {
+            return context.Jogo.Where(d => d.Data == date).ToList();
+
+        }
+        public List<Jogo> GameByEstadium(string estadium)
+        {
+            return context.Jogo.Where(d => d.Estadio.Contains(estadium)).ToList();
+        }
+
+        public List<Jogo> GameByTeams(string team)
+        {
+            var games = context.Jogo.Include(e => e.SelecaoCasaNavigation).Include(s => s.SelecaoVisitanteNavigation).ToList();
+            return games.Where(f => f.SelecaoCasaNavigation.Nome.Contains(team) || f.SelecaoVisitanteNavigation.Nome.Contains(team)).ToList();
+
         }
     }
 }

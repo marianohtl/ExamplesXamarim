@@ -9,5 +9,8 @@ namespace WS_Tower.Interfaces
     interface ISelecao
     {
         List<Selecao> GetAllTeams();
+
+        List<String> GetTeams();
+
     }
 }

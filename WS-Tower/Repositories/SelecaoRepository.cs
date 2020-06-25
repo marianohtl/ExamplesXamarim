@@ -16,5 +16,11 @@ namespace WS_Tower.Repositories
         {
             return context.Selecao.ToList();
         }
+
+        public List<string> GetTeams()
+        {
+            return context.Selecao.Select(d => d.Nome).ToList();
+        }
+
     }
 }
