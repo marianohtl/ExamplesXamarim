@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ThalitaMariano\\Documents\\Xamarim\\WS-Tower\\WS-Tower.csproj": {}
+    "C:\\Programação\\PlanoB\\Xamarim\\WS-Tower\\WS-Tower.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ThalitaMariano\\Documents\\Xamarim\\WS-Tower\\WS-Tower.csproj": {
+    "C:\\Programação\\PlanoB\\Xamarim\\WS-Tower\\WS-Tower.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ThalitaMariano\\Documents\\Xamarim\\WS-Tower\\WS-Tower.csproj",
+        "projectUniqueName": "C:\\Programação\\PlanoB\\Xamarim\\WS-Tower\\WS-Tower.csproj",
         "projectName": "WS-Tower",
-        "projectPath": "C:\\Users\\ThalitaMariano\\Documents\\Xamarim\\WS-Tower\\WS-Tower.csproj",
-        "packagesPath": "C:\\Users\\ThalitaMariano\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ThalitaMariano\\Documents\\Xamarim\\WS-Tower\\obj\\",
+        "projectPath": "C:\\Programação\\PlanoB\\Xamarim\\WS-Tower\\WS-Tower.csproj",
+        "packagesPath": "C:\\Users\\souza\\.nuget\\packages\\",
+        "outputPath": "C:\\Programação\\PlanoB\\Xamarim\\WS-Tower\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\ThalitaMariano\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\souza\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -106,7 +106,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
         }
       }
     }
