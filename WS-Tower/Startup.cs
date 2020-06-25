@@ -12,6 +12,15 @@ namespace WebApi
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers().AddNewtonsoftJson(opt => opt.SerializerSettings.ReferenceLoopHandling = ReferenceLoopHandling.Ignore);
+            services.AddControllers().AddNewtonsoftJson(opt => opt.SerializerSettings.NullValueHandling = NullValueHandling.Ignore);
+
+            //AddJsonOptions(options =>
+            //{
+            //    // Ignora valores nulos ao fazer junções nas consultas
+            //    options.SerializerSettings.NullValueHandling = NullValueHandling.Ignore;
+            //    // Ignora os loopings nas consultas
+            //    options.SerializerSettings.ReferenceLoopHandling = ReferenceLoopHandling.Ignore;
+            //});
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
