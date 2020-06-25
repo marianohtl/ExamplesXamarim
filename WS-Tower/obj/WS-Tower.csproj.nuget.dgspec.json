@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Programação\\WSTower\\Xamarim\\WS-Tower\\WS-Tower.csproj": {}
+    "C:\\Programação\\LoginCadastro\\Xamarim\\WS-Tower\\WS-Tower.csproj": {}
   },
   "projects": {
-    "C:\\Programação\\WSTower\\Xamarim\\WS-Tower\\WS-Tower.csproj": {
+    "C:\\Programação\\LoginCadastro\\Xamarim\\WS-Tower\\WS-Tower.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Programação\\WSTower\\Xamarim\\WS-Tower\\WS-Tower.csproj",
+        "projectUniqueName": "C:\\Programação\\LoginCadastro\\Xamarim\\WS-Tower\\WS-Tower.csproj",
         "projectName": "WS-Tower",
-        "projectPath": "C:\\Programação\\WSTower\\Xamarim\\WS-Tower\\WS-Tower.csproj",
+        "projectPath": "C:\\Programação\\LoginCadastro\\Xamarim\\WS-Tower\\WS-Tower.csproj",
         "packagesPath": "C:\\Users\\souza\\.nuget\\packages\\",
-        "outputPath": "C:\\Programação\\WSTower\\Xamarim\\WS-Tower\\obj\\",
+        "outputPath": "C:\\Programação\\LoginCadastro\\Xamarim\\WS-Tower\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",

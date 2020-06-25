@@ -25,7 +25,7 @@ namespace WS_Tower.Contexts
         {
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseSqlServer("Data Source=LAPTOP-4P186HFN\\SQLEXPRESS;Initial Catalog=Campeonato;Integrated Security=True");
+                optionsBuilder.UseSqlServer("Data Source=LAPTOP-7C6K4DAQ\\SQLEXPRESS;Initial Catalog=Campeonato;Integrated Security=True");
             }
         }
 

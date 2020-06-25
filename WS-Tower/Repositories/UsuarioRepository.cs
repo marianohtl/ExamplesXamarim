@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Threading.Tasks;
 using WS_Tower.Contexts;
 using WS_Tower.Domains;
 using WS_Tower.Interfaces;
+using WS_Tower.ViewModels;
 
 namespace WS_Tower.Repositories
 {
@@ -40,19 +42,12 @@ namespace WS_Tower.Repositories
             context.SaveChanges();
         }
 
-        public Usuario BuscarPorEmail(string email)
+        public Usuario BuscarPorEmailSenha(LoginViewModel loginViewModel)
         {
-            return context.Usuario.FirstOrDefault(e => e.Email == email);
-        }
-
-        public Usuario BuscarPorApelido(string apelido)
-        {
-            return context.Usuario.FirstOrDefault(a => a.Apelido == apelido);
-        }
-
-        public Usuario BuscarPorSenha(string senha)
-        {
-            return context.Usuario.FirstOrDefault(s=> s.Senha == senha);
+            using (DataContext context = new DataContext())
+            {
+                return context.Usuario.FirstOrDefault(x => (x.Email == loginViewModel.email || x.Apelido == loginViewModel.email) && x.Senha == loginViewModel.senha);
+            }
         }
     }
 }

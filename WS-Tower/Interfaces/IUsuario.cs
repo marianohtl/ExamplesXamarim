@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using WS_Tower.Domains;
+using WS_Tower.ViewModels;
 
 namespace WS_Tower.Interfaces
 {
@@ -16,10 +17,6 @@ namespace WS_Tower.Interfaces
 
         void Atualizar(int id, Usuario usuarioAtualizado);
 
-        Usuario BuscarPorEmail(string email);
-
-        Usuario BuscarPorApelido(string apelido);
-
-        Usuario BuscarPorSenha(string senha);
+        Usuario BuscarPorEmailSenha(LoginViewModel loginViewModel);
     }
 }

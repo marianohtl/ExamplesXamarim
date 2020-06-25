@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ZzISs4BPHxuOcbc43JZazQiaksS3utHhLnN086sqg5JgVvBRqc+v2OaKTVafaGtzZ8SjjYduMZq6CWfepEpATg==",
+  "dgSpecHash": "FGf0WXttUGh3rB3ye6xbIo5JwBpQwc8BTdV0uz0CkrbwvT4UbxWnQrFpnYV5KKZHA90rId6YPJWLFKEzwN1+5g==",
   "success": true,
-  "projectFilePath": "C:\\Programação\\WSTower\\Xamarim\\WS-Tower\\WS-Tower.csproj",
+  "projectFilePath": "C:\\Programação\\LoginCadastro\\Xamarim\\WS-Tower\\WS-Tower.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\souza\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\souza\\.nuget\\packages\\microsoft.aspnetcore.razor\\2.2.0\\microsoft.aspnetcore.razor.2.2.0.nupkg.sha512",
