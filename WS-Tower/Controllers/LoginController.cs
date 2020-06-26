@@ -28,16 +28,23 @@ namespace WS_Tower.Controllers
         [HttpPost]
         public IActionResult LoginViewModel(LoginViewModel login)
         {
-            Usuario usuarioBuscado = _usuario.BuscarPorEmailSenha(login);
 
-            if (usuarioBuscado == null)
-            {
-                // Retorna NotFound com uma mensagem de erro
-                return NotFound("E-mail ou senha inválidos");
-            }
+            string responseUser = _usuario.BuscarPorEmailSenha(login);
+           
+            if (responseUser == "EmailApelido")
+                return NotFound("Usuário não foi encontrado.");
+           
 
-            _usuario.BuscarPorEmailSenha(login);
-            return StatusCode(200);
+            
+            if (responseUser == "Senha")
+                return NotFound("Senha inválida");
+            
+            
+            if(responseUser == "Ok")
+            return Ok("Dados Corretos - Efetuando Login");
+
+
+            return NotFound("Erro");
         }
     }
 }

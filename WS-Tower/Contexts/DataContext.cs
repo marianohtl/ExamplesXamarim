@@ -25,8 +25,10 @@ namespace WS_Tower.Contexts
         {
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseSqlServer("Data Source=LAPTOP-7C6K4DAQ\\SQLEXPRESS;Initial Catalog=Campeonato;Integrated Security=True");
+               // optionsBuilder.UseSqlServer("Data Source=LAPTOP-7C6K4DAQ\\SQLEXPRESS;Initial Catalog=Campeonato;Integrated Security=True");
+                optionsBuilder.UseSqlServer("Data Source=localhost\\SQLEXPRESS; Initial Catalog=Campeonato; Integrated Security=True");
             }
+            
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)

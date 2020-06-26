@@ -36,27 +36,55 @@ namespace WS_Tower.Controllers
             return Ok(_usuario.GetAllUsers());
         }
 
-        [HttpPost]
-        public IActionResult Post(Usuario novoUsuario)
+
+        // Ainda não foi implementado o cadasatro de foto
+        // Todos os campos são obrigatórios.  Esta validação será feita no Mobile
+        [HttpPost("Cadastrar")]
+        public IActionResult Post(Usuario newUser)
         {
-            if (((novoUsuario.Nome == novoUsuario.Apelido) || (novoUsuario.Nome == null))
-                || (novoUsuario.Email == null) || (novoUsuario.Apelido == null) ||
-                (novoUsuario.Senha == null))
-            {
-                return StatusCode(400);
-            }
-            else
-            {
-                _usuario.Cadastrar(novoUsuario);
-                return StatusCode(201);
-            }
+            bool nickName = _usuario.ValidateNickname(newUser);  
+            if(nickName == false)
+                return NotFound("Este apelido já está cadastrado!");
+
+            bool email = _usuario.ValidateEmail(newUser);
+            
+            if (email == false)
+                return NotFound("Este email já está cadastrado!");
+
+
+            bool imputsSucess = _usuario.ValidateNullImputs(newUser);
+            if(imputsSucess == false)
+                return NotFound("Reveja seus dados, o nome não pode ser igual ao apelido ou há algum campo vazio!");
+     
+            _usuario.Cadastrar(newUser);
+            return Ok("Dados cadastrados com sucesso!");
         }
 
-        [HttpPut("{id}")]
+
+
+        [HttpPut("Update/{id}")]
         public IActionResult Put(int id, Usuario usuarioAtualizado)
         {
+       
+            bool userFound = _usuario.ValidateUser(id);
+            if (userFound == false)
+                return NotFound("Este usuário não existe!");
+
+            bool nickName = _usuario.ValidateNickname(usuarioAtualizado);
+            if (nickName == false)
+                return NotFound("Este apelido já está cadastrado!");
+
+            bool email = _usuario.ValidateEmail(usuarioAtualizado);
+            if (email == false)
+                return NotFound("Este email já está cadastrado!");
+
+            bool imputsSucess = _usuario.ValidateNullImputs(usuarioAtualizado);
+            if (imputsSucess == false)
+                return NotFound("Reveja seus dados, o nome não pode ser igual ao apelido ou há algum campo vazio!");
+
+
             _usuario.Atualizar(id, usuarioAtualizado);
-            return StatusCode(204);
+            return Ok("Dados alterados com sucesso!");
         }
     }
 }

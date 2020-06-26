@@ -11,12 +11,23 @@ namespace WS_Tower.Interfaces
     {
         List<Usuario> GetAllUsers();
 
-        void Cadastrar(Usuario novoUsuario);
+        void Cadastrar(Usuario newUser);
 
+        bool ValidateNullImputs(Usuario newUser);
+
+        string ValidateMinimumCaracteres(Usuario newUser);
         Usuario BuscarPorId(int id);
 
+        void UpdatePassword(int id, Usuario usuarioAtualizado);
+
+        bool ValidateUser(int id);
         void Atualizar(int id, Usuario usuarioAtualizado);
 
-        Usuario BuscarPorEmailSenha(LoginViewModel loginViewModel);
+        string BuscarPorEmailSenha(LoginViewModel loginViewModel);
+        bool ValidateNickname(Usuario newUser);
+
+        bool ValidateEmail(Usuario newUser);
+
+
     }
 }
