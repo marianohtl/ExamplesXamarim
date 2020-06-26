@@ -65,6 +65,10 @@ namespace WS_Tower.Controllers
             return Ok(_game.GameByTeams(team));
         }
 
-
+        [HttpGet("Confrontation/{id}")]
+        public IActionResult Confrontation(int id)
+        {
+            return Ok(_game.Confrontation(id));
+        }
     }
 }

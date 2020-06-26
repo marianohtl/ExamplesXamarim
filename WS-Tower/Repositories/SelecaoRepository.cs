@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -22,5 +23,11 @@ namespace WS_Tower.Repositories
             return context.Selecao.Select(d => d.Nome).ToList();
         }
 
+        //Testar
+        public List<Selecao> GetPlayers(int id)
+        {
+            var jogadores = context.Selecao.Where(x => x.Id == id).Include(x => x.Jogador).ToList();
+            return jogadores;
+        }
     }
 }

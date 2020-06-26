@@ -84,14 +84,11 @@ namespace WS_Tower.Repositories
         }
 
         //terminar de implementar e testar
-        public void UpdatePassword(int id, Usuario usuarioAtualizado)
+        public void UpdatePassword(int id, Usuario senhaAtualizada)
         {
             Usuario usuarioBuscado = context.Usuario.Find(id);
 
-            usuarioBuscado.Nome = usuarioBuscado.Nome;
-            usuarioBuscado.Email = usuarioBuscado.Email;
-            usuarioBuscado.Apelido = usuarioBuscado.Apelido;
-            usuarioBuscado.Senha = usuarioAtualizado.Senha;
+            usuarioBuscado.Senha = senhaAtualizada.Senha;
 
             context.Usuario.Update(usuarioBuscado);
             context.SaveChanges();

@@ -17,5 +17,11 @@ namespace WS_Tower.Repositories
         {
             return context.Jogador.ToList();
         }
+
+        public List<Jogador> GetByName(string name)
+        {
+            var nomes = context.Jogador.Where(x => x.Nome == name).ToList();
+            return nomes;
+        }
     }
 }

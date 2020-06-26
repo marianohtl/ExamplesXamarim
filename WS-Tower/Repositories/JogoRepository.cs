@@ -43,5 +43,11 @@ namespace WS_Tower.Repositories
             return games.Where(f => f.SelecaoCasaNavigation.Nome.Contains(team) || f.SelecaoVisitanteNavigation.Nome.Contains(team)).ToList();
 
         }
+
+        public List<Jogo> Confrontation(int id)
+        {
+            var confronto = context.Jogo.Where(e => e.Id == id).Include(x => x.SelecaoCasaNavigation).ThenInclude(x => x.Jogador).Include(x => x.SelecaoVisitanteNavigation).ThenInclude(x => x.Jogador).ToList();
+            return confronto;
+        }
     }
 }

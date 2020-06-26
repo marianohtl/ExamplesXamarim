@@ -21,5 +21,6 @@ namespace WS_Tower.Interfaces
 
         List<Jogo> GameByTeams(string teams);
 
+        List<Jogo> Confrontation(int ids);
     }
 }

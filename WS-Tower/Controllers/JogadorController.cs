@@ -32,7 +32,11 @@ namespace WS_Tower.Controllers
             return Ok(_player.GetAllPlayers());
         }
 
-  
+        [HttpGet("GetByName/{name}")]
+        public IActionResult GetByName(string name)
+        {
+            return Ok(_player.GetByName(name));
+        }
 
     }
 }

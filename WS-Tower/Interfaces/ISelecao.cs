@@ -12,5 +12,6 @@ namespace WS_Tower.Interfaces
 
         List<String> GetTeams();
 
+        List<Selecao> GetPlayers(int id);
     }
 }

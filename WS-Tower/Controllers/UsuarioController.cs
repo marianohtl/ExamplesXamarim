@@ -86,5 +86,13 @@ namespace WS_Tower.Controllers
             _usuario.Atualizar(id, usuarioAtualizado);
             return Ok("Dados alterados com sucesso!");
         }
+
+        [HttpPut("UpdatePassword/{id}")]
+
+        public IActionResult Senha(int id, Usuario senhaAlterada)
+        {
+            _usuario.UpdatePassword(id, senhaAlterada);
+            return Ok("Senha alterada com sucesso");
+        }
     }
 }

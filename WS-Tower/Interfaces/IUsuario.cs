@@ -18,7 +18,7 @@ namespace WS_Tower.Interfaces
         string ValidateMinimumCaracteres(Usuario newUser);
         Usuario BuscarPorId(int id);
 
-        void UpdatePassword(int id, Usuario usuarioAtualizado);
+        void UpdatePassword(int id, Usuario senhaAtualizada);
 
         bool ValidateUser(int id);
         void Atualizar(int id, Usuario usuarioAtualizado);

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using WS_Tower.Controllers;
 using WS_Tower.Domains;
 
 namespace WS_Tower.Interfaces
@@ -10,5 +11,6 @@ namespace WS_Tower.Interfaces
     {
         List<Jogador> GetAllPlayers();
 
+        List<Jogador> GetByName(string name);
     }
 }

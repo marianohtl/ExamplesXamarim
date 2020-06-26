@@ -37,5 +37,10 @@ namespace WS_Tower.Controllers
             return Ok(_selecao.GetTeams());
         }
 
+        [HttpGet("GetByPlayers/{id}")]
+        public IActionResult Put(int id)
+        {
+            return Ok(_selecao.GetPlayers(id));
+        }
     }
 }
