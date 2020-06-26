@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "GgcpckL5Y4XlRRFHfNKhtQiFd0qDKrNmh3R5gpeRRzl5KTW1Mkvr/94vXG5++TOHgpLVmflVNHmVW+4UBWD4Eg==",
+  "dgSpecHash": "0xH+Q7gvfJvBroN/sZddOV/9N6RR3FFJZOJgWc34NVuItq7Xi9t3dK95lCMp2mMi1PtyixZGJlKqkQy+1EMWmw==",
   "success": true,
-  "projectFilePath": "C:\\Programação\\PlanoB\\Xamarim\\WS-Tower\\WS-Tower.csproj",
+  "projectFilePath": "C:\\Programação\\WSTower\\Xamarim\\WS-Tower\\WS-Tower.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\souza\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\souza\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\3.1.5\\microsoft.aspnetcore.jsonpatch.3.1.5.nupkg.sha512",
