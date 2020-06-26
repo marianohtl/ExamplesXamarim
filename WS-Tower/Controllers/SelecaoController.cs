@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using WS_Tower.Interfaces;
+using WS_Tower.Interfaces;
 using WS_Tower.Repositories;
 
 namespace WS_Tower.Controllers
@@ -26,10 +27,18 @@ namespace WS_Tower.Controllers
 
         [HttpGet]
         [ProducesResponseType(StatusCodes.Status200OK)]
-        public IActionResult Get()
+        public IActionResult GetAllTeams()
         {
             return Ok(_selecao.GetAllTeams());
         }
+
+        [HttpGet("{id}")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        public IActionResult GetGamersTeamsById(int id)
+        {
+            return Ok(_selecao.GetGamersTeamsById(id));
+        }
+
 
         [HttpGet("Teams")]
         public IActionResult GetTeams()
@@ -38,7 +47,7 @@ namespace WS_Tower.Controllers
         }
 
         [HttpGet("GetByPlayers/{id}")]
-        public IActionResult Put(int id)
+        public IActionResult GetPlayers(int id)
         {
             return Ok(_selecao.GetPlayers(id));
         }

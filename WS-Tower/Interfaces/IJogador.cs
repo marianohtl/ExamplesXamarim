@@ -9,6 +9,7 @@ namespace WS_Tower.Interfaces
 {
     interface IJogador
     {
+        //Lista de Seleções
         List<Jogador> GetAllPlayers();
 
         List<Jogador> GetByName(string name);

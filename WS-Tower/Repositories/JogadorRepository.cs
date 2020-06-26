@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -13,9 +14,10 @@ namespace WS_Tower.Repositories
 
         DataContext context = new DataContext();
 
+
         public List<Jogador> GetAllPlayers()
         {
-            return context.Jogador.ToList();
+            return context.Jogador.Include( x => x.Selecao).ToList();
         }
 
         public List<Jogador> GetByName(string name)

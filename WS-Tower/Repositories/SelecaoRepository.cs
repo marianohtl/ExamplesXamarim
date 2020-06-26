@@ -11,11 +11,16 @@ namespace WS_Tower.Repositories
 {
     public class SelecaoRepository : ISelecao
     {
-        DataContext context = new DataContext();
 
+        DataContext context = new DataContext();
         public List<Selecao> GetAllTeams()
         {
             return context.Selecao.ToList();
+        }
+
+        public Selecao GetGamersTeamsById(int id)
+        {
+            return context.Selecao.Include(x => x.Jogador).First(x => x.Id == id);
         }
 
         public List<string> GetTeams()
@@ -23,11 +28,11 @@ namespace WS_Tower.Repositories
             return context.Selecao.Select(d => d.Nome).ToList();
         }
 
-        //Testar
         public List<Selecao> GetPlayers(int id)
         {
             var jogadores = context.Selecao.Where(x => x.Id == id).Include(x => x.Jogador).ToList();
             return jogadores;
         }
+        
     }
 }

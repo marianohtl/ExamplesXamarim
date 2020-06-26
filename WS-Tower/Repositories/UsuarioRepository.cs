@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Security.Cryptography.X509Certificates;
-using System.Threading.Tasks;
 using WS_Tower.Contexts;
 using WS_Tower.Domains;
 using WS_Tower.Interfaces;
@@ -83,12 +81,17 @@ namespace WS_Tower.Repositories
             context.SaveChanges();
         }
 
-        //terminar de implementar e testar
         public void UpdatePassword(int id, Usuario senhaAtualizada)
         {
             Usuario usuarioBuscado = context.Usuario.Find(id);
 
-            usuarioBuscado.Senha = senhaAtualizada.Senha;
+            //uma exceção bonitona
+            if (usuarioBuscado == null)
+                throw new Exception("Usuário não encontrado");
+            
+;            usuarioBuscado.Senha = senhaAtualizada.Senha;
+
+
 
             context.Usuario.Update(usuarioBuscado);
             context.SaveChanges();

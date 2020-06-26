@@ -18,12 +18,9 @@ namespace WS_Tower.Controllers
     [ApiController]
     public class UsuarioController : ControllerBase
     {
-        /// </summary>
+
         private IUsuario _usuario;
 
-        /// <summary>
-        /// Instancia este objeto para que haja a referência aos métodos no repositório
-        /// </summary>
         public UsuarioController()
         {
             _usuario = new UsuarioRepository();
@@ -87,12 +84,20 @@ namespace WS_Tower.Controllers
             return Ok("Dados alterados com sucesso!");
         }
 
-        [HttpPut("UpdatePassword/{id}")]
 
+        [HttpPut("UpdatePassword/{id}")]
         public IActionResult Senha(int id, Usuario senhaAlterada)
         {
-            _usuario.UpdatePassword(id, senhaAlterada);
-            return Ok("Senha alterada com sucesso");
+            //um try catch bonitão
+            try
+            {
+                _usuario.UpdatePassword(id, senhaAlterada);
+                return Ok("Senha alterada com sucesso");
+            }
+            catch (Exception e)
+            {
+                return NotFound(new {Error = e.Message});
+            }
         }
     }
 }

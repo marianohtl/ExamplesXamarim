@@ -10,6 +10,10 @@ namespace WS_Tower.Interfaces
     {
         List<Selecao> GetAllTeams();
 
+        //Listar Jogadores da Seleção
+        Selecao GetGamersTeamsById(int id);
+
+
         List<String> GetTeams();
 
         List<Selecao> GetPlayers(int id);

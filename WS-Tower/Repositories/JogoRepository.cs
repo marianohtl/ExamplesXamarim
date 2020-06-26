@@ -16,7 +16,7 @@ namespace WS_Tower.Repositories
 
         public List<Jogo> GetAllGames()
         {
-            return context.Jogo.OrderByDescending(g => g.Data).ToList(); 
+            return context.Jogo.OrderByDescending(g => g.Data).Include(x => x.SelecaoCasaNavigation).Include(x => x.SelecaoVisitanteNavigation).ToList(); 
         }
         public List<DateTime?> GetDatasGame()
         {

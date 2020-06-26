@@ -9,6 +9,7 @@ namespace WS_Tower.Interfaces
     interface IJogo
     {
 
+        // Todos os confrontos 
         List<Jogo> GetAllGames();
 
         List<DateTime?> GetDatasGame();
@@ -21,6 +22,7 @@ namespace WS_Tower.Interfaces
 
         List<Jogo> GameByTeams(string teams);
 
+        //Dados do Confrontos & Dados do Filtro de 
         List<Jogo> Confrontation(int ids);
     }
 }
