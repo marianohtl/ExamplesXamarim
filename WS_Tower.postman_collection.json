@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "4373540c-7727-40c8-85e5-4284739fbe7f",
+		"_postman_id": "4bd8a14e-6e26-4add-817c-be502b388a18",
 		"name": "WS_Tower",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -11,16 +11,9 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:5000/api/Usuario/",
-					"protocol": "http",
+					"raw": "{{URL}}Usuario",
 					"host": [
-						"localhost"
-					],
-					"port": "5000",
-					"path": [
-						"api",
-						"Usuario",
-						""
+						"{{URL}}Usuario"
 					]
 				}
 			},
@@ -32,15 +25,9 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:64746/api/Jogador",
-					"protocol": "http",
+					"raw": "{{URL}}Jogador",
 					"host": [
-						"localhost"
-					],
-					"port": "64746",
-					"path": [
-						"api",
-						"Jogador"
+						"{{URL}}Jogador"
 					]
 				}
 			},
@@ -52,15 +39,9 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:64746/api/Jogo",
-					"protocol": "http",
+					"raw": "{{URL}}Jogo",
 					"host": [
-						"localhost"
-					],
-					"port": "64746",
-					"path": [
-						"api",
-						"Jogo"
+						"{{URL}}Jogo"
 					]
 				}
 			},
@@ -72,15 +53,9 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:64746/api/Selecao",
-					"protocol": "http",
+					"raw": "{{URL}}Selecao",
 					"host": [
-						"localhost"
-					],
-					"port": "64746",
-					"path": [
-						"api",
-						"Selecao"
+						"{{URL}}Selecao"
 					]
 				}
 			},
@@ -92,15 +67,11 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:64746/api/Jogo/Data",
-					"protocol": "http",
+					"raw": "{{URL}}Jogo/Data",
 					"host": [
-						"localhost"
+						"{{URL}}Jogo"
 					],
-					"port": "64746",
 					"path": [
-						"api",
-						"Jogo",
 						"Data"
 					]
 				}
@@ -113,15 +84,11 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:64746/api/Jogo/Estadium",
-					"protocol": "http",
+					"raw": "{{URL}}Jogo/Estadium",
 					"host": [
-						"localhost"
+						"{{URL}}Jogo"
 					],
-					"port": "64746",
 					"path": [
-						"api",
-						"Jogo",
 						"Estadium"
 					]
 				}
@@ -134,15 +101,11 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:64746/api/Jogo/Estadium",
-					"protocol": "http",
+					"raw": "{{URL}}Jogo/Estadium",
 					"host": [
-						"localhost"
+						"{{URL}}Jogo"
 					],
-					"port": "64746",
 					"path": [
-						"api",
-						"Jogo",
 						"Estadium"
 					]
 				}
@@ -155,15 +118,11 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:64746/api/Jogo/GameByDate/2020-01-05",
-					"protocol": "http",
+					"raw": "{{URL}}Jogo/GameByDate/2020-01-05",
 					"host": [
-						"localhost"
+						"{{URL}}Jogo"
 					],
-					"port": "64746",
 					"path": [
-						"api",
-						"Jogo",
 						"GameByDate",
 						"2020-01-05"
 					]
@@ -177,17 +136,13 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:64746/api/Jogo/GameByEstadium/S",
-					"protocol": "http",
+					"raw": "{{URL}}Jogo/GameByEstadium/Signal Iduna Park",
 					"host": [
-						"localhost"
+						"{{URL}}Jogo"
 					],
-					"port": "64746",
 					"path": [
-						"api",
-						"Jogo",
 						"GameByEstadium",
-						"S"
+						"Signal Iduna Park"
 					]
 				}
 			},
@@ -199,15 +154,11 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:64746/api/Jogo/GameByTeams/Alemanha",
-					"protocol": "http",
+					"raw": "{{URL}}Jogo/GameByTeams/Alemanha",
 					"host": [
-						"localhost"
+						"{{URL}}Jogo"
 					],
-					"port": "64746",
 					"path": [
-						"api",
-						"Jogo",
 						"GameByTeams",
 						"Alemanha"
 					]
@@ -230,15 +181,9 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:5000/api/Login",
-					"protocol": "http",
+					"raw": "{{URL}}Login",
 					"host": [
-						"localhost"
-					],
-					"port": "5000",
-					"path": [
-						"api",
-						"Login"
+						"{{URL}}Login"
 					]
 				}
 			},
@@ -251,7 +196,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"Nome\": \"Tabatha Bezerra\",\r\n    \"Email\": \"tabs@email.com\",\r\n    \"Apelido\": \"Tabsa\",\r\n    \"Foto\": null,\r\n    \"Senha\":\"123\"\r\n}",
+					"raw": "{\r\n    \"Nome\": \"Denzey\",\r\n    \"Email\": \"denzey@email.com\",\r\n    \"Apelido\": \"Deny\",\r\n    \"Foto\": null,\r\n    \"Senha\":\"13579\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -259,15 +204,11 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:5000/api/Usuario/Cadastrar",
-					"protocol": "http",
+					"raw": "{{URL}}Usuario/Cadastrar",
 					"host": [
-						"localhost"
+						"{{URL}}Usuario"
 					],
-					"port": "5000",
 					"path": [
-						"api",
-						"Usuario",
 						"Cadastrar"
 					]
 				}
@@ -281,7 +222,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"id\":1,\r\n    \"Nome\":\"Alice Moreira\",\r\n    \"Email\": \"aMoreira@gmail.com\",\r\n    \"Apelido\": \"aMoreira\",\r\n    \"Foto\": null,\r\n    \"Senha\":\"12345\"\r\n}",
+					"raw": "{\r\n    \"id\": 6,\r\n    \"nome\": \"Denzey\",\r\n    \"email\": \"denzey@email.com\",\r\n    \"apelido\": \"Deny\",\r\n    \"senha\": \"13570\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -289,16 +230,73 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:5000/api/Usuario/Update/1",
-					"protocol": "http",
+					"raw": "{{URL}}Usuario/Update/6",
 					"host": [
-						"localhost"
+						"{{URL}}Usuario"
 					],
-					"port": "5000",
 					"path": [
-						"api",
-						"Usuario",
 						"Update",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetConfronto",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}Jogo/Confrontation/4",
+					"host": [
+						"{{URL}}Jogo"
+					],
+					"path": [
+						"Confrontation",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "{{URL}}Jogador/GetByName/Manuel Neuer",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n    {\r\n        \"id\": 2,\r\n        \"nome\": \"Thalita\",\r\n        \"email\": \"thalita@email.com\",\r\n        \"apelido\": \"Talia\",\r\n        \"senha\": \"543222\"\r\n    }\r\n"
+				},
+				"url": {
+					"raw": "{{URL}}Jogador/GetByName/Manuel Neuer",
+					"host": [
+						"{{URL}}Jogador"
+					],
+					"path": [
+						"GetByName",
+						"Manuel Neuer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Selecao/GetPlayers/1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}Selecao/GetPlayers/1",
+					"host": [
+						"{{URL}}Selecao"
+					],
+					"path": [
+						"GetPlayers",
 						"1"
 					]
 				}
