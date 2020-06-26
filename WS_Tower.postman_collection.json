@@ -1,0 +1,310 @@
+{
+	"info": {
+		"_postman_id": "4373540c-7727-40c8-85e5-4284739fbe7f",
+		"name": "WS_Tower",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GetUsuario",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/Usuario/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"Usuario",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetJogador",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:64746/api/Jogador",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "64746",
+					"path": [
+						"api",
+						"Jogador"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetJogo",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:64746/api/Jogo",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "64746",
+					"path": [
+						"api",
+						"Jogo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetSelecao",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:64746/api/Selecao",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "64746",
+					"path": [
+						"api",
+						"Selecao"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetJogo/Data",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:64746/api/Jogo/Data",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "64746",
+					"path": [
+						"api",
+						"Jogo",
+						"Data"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetJogo/Stadium",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:64746/api/Jogo/Estadium",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "64746",
+					"path": [
+						"api",
+						"Jogo",
+						"Estadium"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetSelecao/Teams",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:64746/api/Jogo/Estadium",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "64746",
+					"path": [
+						"api",
+						"Jogo",
+						"Estadium"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetJogo/GameByDate/2010-10-01",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:64746/api/Jogo/GameByDate/2020-01-05",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "64746",
+					"path": [
+						"api",
+						"Jogo",
+						"GameByDate",
+						"2020-01-05"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetJogo/GameByEstadium/{estadium}",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:64746/api/Jogo/GameByEstadium/S",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "64746",
+					"path": [
+						"api",
+						"Jogo",
+						"GameByEstadium",
+						"S"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetJogo/GameByTeams/{team}",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:64746/api/Jogo/GameByTeams/Alemanha",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "64746",
+					"path": [
+						"api",
+						"Jogo",
+						"GameByTeams",
+						"Alemanha"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post/Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"gabriel@email.com\",\r\n    \"senha\":\"12345\",\r\n    \"Apelido\":\"Bil\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/Login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"Login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post/Usuario",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Nome\": \"Tabatha Bezerra\",\r\n    \"Email\": \"tabs@email.com\",\r\n    \"Apelido\": \"Tabsa\",\r\n    \"Foto\": null,\r\n    \"Senha\":\"123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/Usuario/Cadastrar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"Usuario",
+						"Cadastrar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Put/Usuario",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":1,\r\n    \"Nome\":\"Alice Moreira\",\r\n    \"Email\": \"aMoreira@gmail.com\",\r\n    \"Apelido\": \"aMoreira\",\r\n    \"Foto\": null,\r\n    \"Senha\":\"12345\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/Usuario/Update/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"Usuario",
+						"Update",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
